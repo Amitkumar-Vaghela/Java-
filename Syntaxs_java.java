@@ -1,0 +1,35 @@
+1. Comments in Java
+
+There are three types of comments in Java. 
+ i. Single line Comment
+   // System.out.println("my name is AMIT kumar");
+ii. Multi-line Comment
+  /*
+    System.out.println("welcome to my java tutorial.");
+    System.out.println("Hello, Im Amit kumar vaghela.");
+  */ 
+iii. Documentation Comment. Also called a doc comment.
+    /** documentation */
+
+
+2. Source File Name
+  The name of a source file should exactly match the public class name with the extension of .java.
+  The name of the file can be a different name if it does not have any public class.Let be you have a public class AMIT
+            AMIT.java // valid syntax
+            amit.java // invalid syntax
+
+  3. Case Sensitivity
+  Java is a case-sensitive language, which means that the identifiers AB, Ab, aB, and ab are different in Java.
+System.out.println("AmitKumarVaghela"); // valid syntax
+system.out.println("AmitKumarVaghela"); // invalid syntax because of the first letter of System keyword is always uppercase. 
+
+4. Class Names
+i. The first letter of the class should be in Uppercase (lowercase is allowed but discouraged).
+ii. If several words are used to form the name of the class, each inner word’s first letter should be in Uppercase. Underscores are allowed, but not recommended. Also allowed are numbers and currency symbols, although the latter are also discouraged because they are used for a special purpose (for inner and anonymous classes).
+
+class MyJavaProgram    // valid syntax
+class 1Program         // invalid syntax
+class My1Program       // valid syntax
+class $Program         // valid syntax, but discouraged
+class My$Program       // valid syntax, but discouraged (inner class Program inside the class My)
+class myJavaProgram    // valid syntax, but discouraged
