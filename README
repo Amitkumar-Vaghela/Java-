@@ -33,3 +33,34 @@ class My1Program       // valid syntax
 class $Program         // valid syntax, but discouraged
 class My$Program       // valid syntax, but discouraged (inner class Program inside the class My)
 class myJavaProgram    // valid syntax, but discouraged
+
+5.Control Flow: Java supports control flow statements like if, else, else if, switch, while, do-while, and for loops.
+
+int x = 10;
+if (x > 0) {
+    System.out.println("Positive");
+} else if (x < 0) {
+    System.out.println("Negative");
+} else {
+    System.out.println("Zero");
+}
+
+// Loop example
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+
+
+5.Methods: Java methods are blocks of code that perform a specific task. They are defined within classes.
+
+public class MyClass {
+    // Method definition
+    public static void sayHello() {
+        System.out.println("Hello, World!");
+    }
+
+    public static void main(String[] args) {
+        // Method invocation
+        sayHello();
+    }
+}
