@@ -2,9 +2,7 @@ package algorithams;
 
 import java.util.Arrays;
 
-/*
- * Consider Notes : PDF : #1_Algorithms.pdf
- */
+
 public class Big_O_TimeComplexityDemo {
 
 // Constant Time Complexity (O(1)):	
