@@ -26,5 +26,39 @@ public class Big_O_TimeComplexityDemo {
 	        }
 	        return factorial;
 	    }
+	    
+//Logarithm Time Complexity O(log n): 	    
+	    public static int linearTime_binarySearch(int[] array, int target) {
+	        int firstIndex = 0;
+	        int lastIndex = array.length - 1;
+
+	        while (firstIndex <= lastIndex) {
+	            int middleIndex = (firstIndex + lastIndex) / 2;
+
+	            if (array[middleIndex] == target) {
+	                return middleIndex;
+	            }
+
+	            if (array[middleIndex] > target) {
+	                lastIndex = middleIndex - 1;
+	            } else {
+	                firstIndex = middleIndex + 1;
+	            }
+	        }
+	        return -1;
+	    }
+	    
+	    
+// Quadratic Time Complexity  O(n^2) :	    
+	    public static String quadraticTime_matchElements(char[] array) {
+	        for (int i = 0; i < array.length; i++) {
+	            for (int j = 0; j < array.length; j++) {
+	                if (i != j && array[i] == array[j]) {
+	                    return "Match found at " + i + " and " + j;
+	                }
+	            }
+	        }
+	        return "No matches found";
+	    }
 
 
